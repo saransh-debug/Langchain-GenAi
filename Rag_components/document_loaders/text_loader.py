@@ -1,0 +1,7 @@
+from langchain_community.document_loaders import PyPDFLoader
+
+
+def load_pdf_documents(file_path: str):
+	"""Load a PDF and return list of Document objects using PyPDFLoader."""
+	loader = PyPDFLoader(file_path)
+	return loader.load()
