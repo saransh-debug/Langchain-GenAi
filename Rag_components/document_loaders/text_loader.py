@@ -1,7 +1,6 @@
-from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import TextLoader
 
 
-def load_pdf_documents(file_path: str):
-	"""Load a PDF and return list of Document objects using PyPDFLoader."""
-	loader = PyPDFLoader(file_path)
-	return loader.load()
+loader = TextLoader(r"C:\Users\HP\OneDrive\Desktop\langchain\Rag_components\document_loaders\random.txt") 
+result = loader.load()
+print(result)                                                         
