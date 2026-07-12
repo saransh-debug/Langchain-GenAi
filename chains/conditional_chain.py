@@ -25,7 +25,7 @@ template1 = PromptTemplate(
 )
 
 
-parser = StrOutputParser()
+parser = StrOutputParser() # parses the output of the model into a string format , there are other parsers available in the langchain_core.output_parsers module which can be used to parse the output of the model into different formats like json , pydantic models etc.
 
 model = ChatGoogleGenerativeAI(model='gemini-2.5-flash')
 
